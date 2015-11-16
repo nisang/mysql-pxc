@@ -14,5 +14,11 @@ Percona XtraDB Cluster Docker 集群方案
       通过mysql命定行查看是否成功
       
       mysql$:show global status like 'wsrep_cluster_size';
+#### 镜像 images
+      master镜像：daocloud.io/onatkh/xtradb-master:master-init
+            pull:docker pull daocloud.io/onatkh/xtradb-master:master-init
+      镜像：daocloud.io/onatkh/xtradb-slave:master-init
+            pull:docker pull daocloud.io/onatkh/xtradb-slave:master-init
+      
 ####  方案来自：
       http://www.oschina.net/translate/percona-xtradb-cluster-how-to-run-a-2-node-cluster-on-a-single-server
