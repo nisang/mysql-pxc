@@ -1,8 +1,5 @@
 FROM percona-xtradb-cluster:5.5.33
+RUN mkdir -p /src/mysql
 COPY my.cnf /etc/my.cnf
-
-EXPOSE 3306
-
-CMD /usr/bin/mysqld_safe
 
 
