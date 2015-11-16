@@ -1,6 +1,6 @@
 FROM adrianlzt/percona-xtradb-cluster-5.5.33
 RUN mkdir -p /srv/mysql
-RUN chmod 777 /srv
+RUN chown -R mysql:mysql /srv/mysql
 COPY my.cnf /etc/my.cnf
 
 
