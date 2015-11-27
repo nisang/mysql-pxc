@@ -9,7 +9,6 @@ Percona XtraDB Cluster Docker 集群方案
 #### 运行 run
       docker run -d --name xtradbnode1 -p 3306:3306 daocloud.io/onatkh/xtradb-master:master-init /usr/bin/mysqld_safe
       docker run -d --name xtradbnode2 -p 13306:3306 --link xtradbnode1:node1 daocloud.io/onatkh/xtradb-slave:master-init /usr/bin/mysqld_safe
-      docker run -d --name xtradbnode3 -p 23306:3306--link xtradbnode1:node1 daocloud.io/onatkh/xtradb-slave:master-init /usr/bin/mysqld_safe
 #### 测试 test
       通过mysql命定行查看是否成功
       
